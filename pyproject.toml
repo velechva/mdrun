@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mdrun"
+version = "0.1.0"
+description = "Markdown runbook runner: preview a .md file and execute its code blocks in a persistent shell"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+mdrun = "mdrun.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["mdrun*"]
