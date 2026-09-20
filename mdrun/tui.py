@@ -216,6 +216,7 @@ class App:
     def _paint(self) -> None:
         scr = self.stdscr
         h, w = scr.getmaxyx()
+        scr.erase()
         left_w, right_w = self._pane_widths(w)
 
         block = self.blocks[self.selected] if self.blocks else None
